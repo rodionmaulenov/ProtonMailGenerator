@@ -11,7 +11,7 @@ This realization work on Linux systems, Not fit for Windows
 
 It is used to generate a protonmail mail for you which you can fully access
 
-Firefox as standard browser is recommended but not must have. For chrome in scripts generator.py change snippet of code, description will be below 
+FireFox as standard browser is recommended but not must have. For chrome in scripts generator.py change snippet of code, description will be below 
 
 
 
@@ -67,3 +67,12 @@ Install the required dependencies:
 ```python
 pip isntall -r requirements.txt
 ```
+
+
+## Lets launch with browser
+
+For FireFox simply write 'python generator.py' into command prompt
+
+For chrome use this row in generator.py:
+pyautogui.keyDown('ctrlleft'); pyautogui.keyDown('shift'); pyautogui.typewrite('N'); pyautogui.keyUp('ctrlleft'); pyautogui.keyUp('shift')
+to start working execute the same above  'python generator.py' 
