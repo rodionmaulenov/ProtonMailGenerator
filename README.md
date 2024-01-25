@@ -71,9 +71,9 @@ pip isntall -r requirements.txt
 
 ## Let`s launch with browser
 
-For FireFox simply write 'python generator.py' into command prompt
+-For FireFox simply write 'python generator.py' into command prompt
 
-For chrome use this row in generator.py:
+-For chrome use this row in generator.py:
 
 pyautogui.keyDown('ctrlleft'); pyautogui.keyDown('shift'); pyautogui.typewrite('N'); pyautogui.keyUp('ctrlleft'); pyautogui.keyUp('shift')
 
