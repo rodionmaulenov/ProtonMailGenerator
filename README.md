@@ -1,38 +1,69 @@
-# protonMailGenerator
+# ProtonMailGenerator
 A E-Mail Generator
 
 
 ## WHAT MAKES THIS BETTER
 
-
 The mail is ready when the script is done. It will already be VERIFIED and NO further manual VERIFICATION needed not like at other generators
 
 ### USAGE
+This realization work on Linux systems, Not fit for Windows
 
 It is used to generate a protonmail mail for you which you can fully access
 
-Firefox as standard browser is recommended but not must have (for chrome or other browsers just use the chromegen.py)
+Firefox as standard browser is recommended but not must have. For chrome in scripts generator.py change snippet of code, description will be below 
 
 
 
-## HOW TO USE
 
-install python: https://www.python.org/downloads/
-and don't forget to add python to your PATH
+## Setup project on Linux systems
 
-open cmd and type in:
-  
-  pip install Pillow
-  
-  pip install pyautogui
+### Step 1: Create a Directory
 
-(write everything individually)
+Open your terminal and create a new directory for your project:
+  ```
+mkdir project-name
+cd project-name
+```
+### Step 2: Create a Virtual Environment
 
-then start by either writing py generator.py/chromegen.py in your commandline or 
-clicking the launch.cmd
-be sure to click nothing while the script is running otherwise you could interfere with it!
-when finished you can find the mail and password in the accLog.txt
-enjoy!
+Set up a virtual environment to manage your Python dependencies:
+```
+virtualenv myenv
+```
+### Step 3: Activate the Virtual Environment
 
-#### EXCUSES:
-My first python code ever kinda bad but it works. Rn I am working on a selenium version of this because using the webbrowser and pyautogui is really bad for this usecase ig.
+Activate the virtual environment:
+```
+source myenv/bin/activate
+``` 
+### Step 4: Clone the Project from GitHub
+
+Copy the project from GitHub:
+```
+git clone git@github.com:rodionmaulenov/ProtonMailGenerator.git
+cd ProtonMailGenerator
+```
+### Step 5: Create a requirements.txt File
+
+Create a requirements.txt file with the following dependencies:
+```
+keyboard==0.13.5
+MouseInfo==0.1.3
+pillow==10.2.0
+PyAutoGUI==0.9.54
+PyGetWindow==0.0.9
+PyMsgBox==1.0.9
+pyperclip==1.8.2
+PyRect==0.2.0
+PyScreeze==0.1.30
+python3-xlib==0.15
+pytweening==1.0.7
+```
+
+### Step 6: Install Dependencies
+
+Install the required dependencies:
+```python
+pip isntall -r requirements.txt
+```
